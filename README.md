@@ -1,1 +1,1 @@
-# FooCoding FullStack Web Development Program - This repository include for assignments and homeworks during the program.
+# FooCoding FullStack Web Development Program - This repository include assignments and homeworks for the FooCoding program.
