@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: red;
+}
+
+.container {
+  min-height: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.container .left_side {
+  background-color: rgb(14, 69, 141);
+  min-width: 400px;
+  height: 1050px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.container .left_side figure {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.left_side section {
+  padding-left: 80px;
+}
+
+.container .right_side {
+  min-width: 620px;
+  height: 1050px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+
+/******************************RIGHT SIDE****************************/
+
+.head {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head h1 {
+  font-size: 2.8rem;
+  color: rgb(14, 69, 141);
+  padding-top: 4rem;
+}
+
+#border_bottom {
+  width: 100px;
+  margin-top: 1rem;
+  border-top: solid black;
+  border-width: 3px;
+}
+
+.right_side h2 {
+  font-size: 1.5rem;
+  color: rgb(57, 164, 188);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.about_me {
+  max-width: 500px;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.right_side .about_me h3 {
+  color: rgb(57, 164, 188);
+  padding-bottom: 1rem;
+}
+
+.experience {
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.education h3,
+.experience h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(57, 164, 188);
+}
+
+.experience article h3 {
+  color: black;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.experience article p {
+  padding-bottom: 1rem;
+}
+
+.experience li {
+  text-align: justify;
+}
+
+.company_detail {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/******************************LEFT SIDE****************************/
+
+.left_side img {
+  border-radius: 4rem;
+}
+
+.left_head {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li:last-child {
+  padding-bottom: 0;
+}
+
+.icon {
+  position: relative;
+  top: -0.5rem;
+  padding-left: 1rem;
+}
+.clist li {
+  padding-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(206, 206, 136);
+}
+
+a:visited {
+  color: rgb(238, 179, 70);
+}
+
+a:hover,
+:focus {
+  color: navajowhite;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang {
+  display: inline-block;
+}
