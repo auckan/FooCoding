@@ -170,3 +170,9 @@ a:active {
 .lang {
   display: inline-block;
 }
+
+.skill_list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
