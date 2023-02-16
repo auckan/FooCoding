@@ -62,8 +62,7 @@ body {
 #border_bottom {
   width: 100px;
   margin-top: 1rem;
-  border-top: solid black;
-  border-width: 3px;
+  border-top: solid black 2.4px;
 }
 
 .right_side h2 {
