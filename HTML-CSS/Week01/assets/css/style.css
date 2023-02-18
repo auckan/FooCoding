@@ -6,45 +6,47 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-  min-width: 200vh;
   background-color: grey;
+  min-height: 100vh;
 }
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .container .left_side {
-  background-color: rgb(14, 69, 141);
-  min-width: 400px;
-  height: 1050px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-.container .left_side figure {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
-
-.left_side section {
-  padding-left: 80px;
+  margin-left: auto;
 }
 
 .container .right_side {
-  min-width: 620px;
-  height: 1050px;
-  background-color: white;
+  margin-right: auto;
+}
+
+.left_side {
+  background-color: rgb(14, 69, 141);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.left_side section {
+  padding-left: 5rem;
+}
+
+.left_side .profile_photo {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.right_side {
+  background-color: white;
+  max-width: 620px;
+  padding-right: 4rem;
   padding-left: 4rem;
+  padding-bottom: 3rem;
 }
 
 /******************************RIGHT SIDE****************************/
@@ -74,7 +76,7 @@ body {
 }
 
 .about_me {
-  max-width: 500px;
+  min-width: 450px;
   text-align: justify;
   margin-bottom: 1rem;
 }
@@ -85,7 +87,6 @@ body {
 }
 
 .experience {
-  max-width: 500px;
   margin-bottom: 1rem;
 }
 
@@ -123,6 +124,7 @@ body {
 .left_head {
   padding-bottom: 1rem;
   padding-top: 1rem;
+  min-width: 300px;
 }
 
 .contact ul {
