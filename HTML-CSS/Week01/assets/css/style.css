@@ -16,32 +16,32 @@ body {
   flex-wrap: nowrap;
 }
 
-.container .left_side {
+.container .left_side_section {
   margin-left: auto;
 }
 
-.container .right_side {
+.container .right_side_section {
   margin-right: auto;
 }
 
-.left_side {
+.left_side_section {
   background-color: rgb(14, 69, 141);
   color: white;
   padding-bottom: 3rem;
 }
 
-.left_side section {
+.left_side_section section {
   padding-left: 5rem;
 }
 
-.left_side .profile_photo {
+.left_side_section .profile_photo {
   padding-bottom: 2rem;
   padding-top: 3rem;
   display: flex;
   justify-content: center;
 }
 
-.right_side {
+.right_side_section {
   background-color: white;
   max-width: 620px;
   padding-right: 4rem;
@@ -49,13 +49,13 @@ body {
   padding-bottom: 3rem;
 }
 
-/******************************RIGHT SIDE****************************/
+/******************************RIGHT SIDE SECTION****************************/
 
-.head {
+.name_and_title {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.head h1 {
+.name_and_title h1 {
   font-size: 2.8rem;
   color: rgb(14, 69, 141);
   padding-top: 4rem;
@@ -67,7 +67,7 @@ body {
   border-top: solid black 2.5px;
 }
 
-.right_side h2 {
+.right_side_section h2 {
   font-size: 1.5rem;
   color: rgb(57, 164, 188);
   padding-top: 1rem;
@@ -81,66 +81,85 @@ body {
   margin-bottom: 1rem;
 }
 
-.right_side .about_me h3 {
+.right_side_section .about_me h3 {
   color: rgb(57, 164, 188);
   padding-bottom: 1rem;
 }
 
-.experience {
+.experience_section {
   margin-bottom: 1rem;
 }
 
-.education h3,
-.experience h3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: rgb(57, 164, 188);
-}
-
-.experience article h3 {
+.experience_section article h3 {
   color: black;
   padding-bottom: 0.2rem;
   font-size: 1rem;
 }
 
-.experience article p {
+.experience_section article p {
   padding-bottom: 1rem;
 }
 
-.experience li {
+.experience_section li {
   text-align: justify;
 }
 
-.company_detail {
+.experience_section li:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.education_section h3,
+.experience_section h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(57, 164, 188);
+}
+
+.education_info {
+  padding-bottom: 1rem;
+}
+
+.job_title {
+  margin-top: 1rem;
+}
+
+.job_info {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/******************************LEFT SIDE****************************/
+/******************************LEFT SIDE SECTION****************************/
 
-.left_side img {
+.left_side_section img {
   border-radius: 4rem;
 }
 
-.left_head {
+.left_side_section_title {
   padding-bottom: 1rem;
   padding-top: 1rem;
   min-width: 300px;
 }
 
-.contact ul {
+.contact_section,
+.skills_section,
+.language_section,
+.learning_strategy_section {
+  margin-bottom: 1rem;
+}
+
+.contact_section ul {
   list-style-type: none;
 }
 
-.contact li:last-child {
+.contact_section li:last-child {
   padding-bottom: 0;
 }
 
-.icon {
+.contact_info {
   position: relative;
   top: -0.5rem;
   padding-left: 1rem;
 }
-.clist li {
+.contact_list li {
   padding-bottom: 0.5rem;
 }
 
@@ -163,17 +182,21 @@ a:active {
   color: lightcoral;
 }
 
-.language {
-  display: flex;
-  flex-direction: column;
-}
-
-.lang {
-  display: inline-block;
-}
-
 .skill_list {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.language_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  display: inline-block;
+}
+
+.progress_bar {
+  margin-right: 0.7rem;
 }

@@ -10,52 +10,32 @@
   </head>
   <body>
     <main class="container">
-      <section class="left_side">
-        <!-----------Profile Picture---------------->
+      <section class="left_side_section">
         <figure class="profile_photo">
-          <img
-            src="./assets/images/photo2.jpg"
-            alt="Photo"
-            width="155px"
-            height="175px"
-          />
+          <img src="./assets/images/profile_photo.jpg" alt="Profile Photo" />
         </figure>
-        <!-----------Contact Section---------------->
-        <section class="contact">
-          <h2 class="left_head">Contact</h2>
-          <ul class="clist">
+        <section class="contact_section">
+          <h2 class="left_side_section_title">Contact</h2>
+          <ul class="contact_list">
             <li>
-              <img
-                src="./assets/images/location.png"
-                alt=" "
-                width="25px"
-                height="30px"
-              />
-              <span class="icon">Malmö/Sweden</span>
+              <img src="./assets/images/location.png" alt="Location Icon" />
+              <span class="contact_info">Malmö/Sweden</span>
             </li>
             <li>
-              <img
-                src="./assets/images/phone.png"
-                alt=" "
-                width="25px"
-                height="30px"
-              /><span class="icon">+46 01 234 56 78</span>
+              <img src="./assets/images/phone.png" alt="Phone Icon" /><span
+                class="contact_info"
+                >+46 01 234 56 78</span
+              >
             </li>
             <li>
-              <img
-                src="./assets/images/mail.png"
-                alt=" "
-                width="28px"
-                height="30px"
-              /><span class="icon">mail@hotmail.com</span>
+              <img src="./assets/images/mail.png" alt="Mail Icon" /><span
+                class="contact_info"
+                >mail@hotmail.com</span
+              >
             </li>
             <li>
-              <img
-                src="./assets/images/github.png"
-                alt=" "
-                width="24px"
-                height="27px"
-              /><span class="icon"
+              <img src="./assets/images/github.png" alt="Github Icon" /><span
+                class="contact_info"
                 ><a href="https://www.github.com/auckan"
                   >github.com/auckan</a
                 ></span
@@ -64,10 +44,8 @@
             <li>
               <img
                 src="./assets/images/linkedin.png"
-                alt=" "
-                width="25.5px"
-                height="27px"
-              /><span class="icon"
+                alt="Linkedin Icon"
+              /><span class="contact_info"
                 ><a href="https://www.linkedin.com/in/alpcan-uckan/"
                   >linkedin.com/auckan</a
                 ></span
@@ -75,10 +53,8 @@
             </li>
           </ul>
         </section>
-        <br />
-        <!-----------Skills Section---------------->
-        <section class="skills">
-          <h2 class="left_head">Skills</h2>
+        <section class="skills_section">
+          <h2 class="left_side_section_title">Skills</h2>
           <ul class="skill_list">
             <li>Abaqus</li>
             <li>HTML</li>
@@ -89,27 +65,23 @@
             <li>Microsoft Office</li>
           </ul>
         </section>
-        <br />
-        <!-----------Languages Section---------------->
-        <section class="language">
-          <h2 class="left_head">Languages</h2>
+        <section class="language_section">
+          <h2 class="left_side_section_title">Languages</h2>
           <div>
-            <progress class="progress" value="100" max="100">70 %</progress>
-            <span class="lang">&nbsp; Turkish</span>
+            <progress class="progress_bar" value="100" max="100">70 %</progress>
+            <span class="language"> Turkish</span>
           </div>
           <div>
-            <progress class="progress" value="90" max="100">70 %</progress>
-            <p class="lang">&nbsp; English</p>
+            <progress class="progress_bar" value="90" max="100">70 %</progress>
+            <p class="language">English</p>
           </div>
           <div>
-            <progress class="progress" value="20" max="100">70 %</progress>
-            <p class="lang">&nbsp; Swedish</p>
+            <progress class="progress_bar" value="20" max="100">70 %</progress>
+            <p class="language">Swedish</p>
           </div>
         </section>
-        <br />
-        <!-----------Learning Strategies Section---------------->
-        <section class="strategy">
-          <h2 class="left_head">Learning Strategies</h2>
+        <section class="learning_strategy_section">
+          <h2 class="left_side_section_title">Learning Strategies</h2>
           <ol>
             <li>
               <a href="https://developer.mozilla.org/en-US/"
@@ -143,15 +115,14 @@
           </ol>
         </section>
       </section>
-      <!-------------------------Right Section----------------------------->
-      <section class="right_side">
-        <header class="head">
-          <h1 class="main_title">
+      <section class="right_side_section">
+        <section class="name_and_title">
+          <h1>
             ALPCAN UÇKAN
             <div id="border_bottom"></div>
           </h1>
           <h2>MECHANICAL ENGINEER</h2>
-        </header>
+        </section>
         <section class="about_me">
           <h3>About Me</h3>
           <p>
@@ -161,12 +132,11 @@
             FooCoding.
           </p>
         </section>
-        <!-----------Experience Section---------------->
-        <section class="experience">
+        <section class="experience_section">
           <h3>My Experience</h3>
           <article>
             <h4>Senior Structural Analysis Engineer</h4>
-            <p class="company_detail">
+            <p class="job_info">
               SDM R&D - Istanbul | January 2017 - September 2022
             </p>
             <ul>
@@ -176,7 +146,6 @@
                 integrity of the systems and recommend improvements/shape
                 optimizations.
               </li>
-              <br />
               <li>
                 Support design and test teams with CAE skills; participate in
                 the project management process, test system integrations,
@@ -184,11 +153,10 @@
                 initiatives as needed.
               </li>
             </ul>
-            <br />
           </article>
           <article>
-            <h4>Testing and Processing Engineer</h4>
-            <p class="company_detail">
+            <h4 class="job_title">Testing and Processing Engineer</h4>
+            <p class="job_info">
               SDM R&D - Istanbul | September 2014 - January 2017
             </p>
             <ul>
@@ -196,7 +164,6 @@
                 Develop data acquisition interface with Labview software for the
                 manual and automated complex test systems.
               </li>
-              <br />
               <li>
                 Select test equipment (pressure transducer, thermocouple, flow
                 meter, load cell etc.) for the data acquisition system and
@@ -205,29 +172,20 @@
             </ul>
           </article>
         </section>
-        <!-----------Education Section---------------->
-        <section class="education">
+        <section class="education_section">
           <h3>My Education</h3>
-          <article>
-            <h4>FooCooding / Fullstack Web Developer Course</h4>
-            <p class="education_detail">
-              Student Software Developer | February 2023 - present
-            </p>
-          </article>
-          <br />
-          <article>
-            <h4>Bogazici University</h4>
-            <p class="education_detail">
-              Automotive Engineering | September 2014 - January 2018
-            </p>
-          </article>
-          <br />
-          <article>
-            <h4>Yildiz Technical University</h4>
-            <p class="education_detail">
-              Mechanical Engineering | September 2009 - June 2014
-            </p>
-          </article>
+          <h4>FooCooding / Fullstack Web Developer Course</h4>
+          <p class="education_info">
+            Student Software Developer | February 2023 - present
+          </p>
+          <h4>Bogazici University</h4>
+          <p class="education_info">
+            Automotive Engineering | September 2014 - January 2018
+          </p>
+          <h4>Yildiz Technical University</h4>
+          <p class="education_info">
+            Mechanical Engineering | September 2009 - June 2014
+          </p>
         </section>
       </section>
     </main>
