@@ -110,8 +110,8 @@ body {
 
 .education_section h3,
 .experience_section h3 {
-  padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   color: rgb(57, 164, 188);
 }
 
