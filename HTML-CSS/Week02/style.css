@@ -1,19 +1,24 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,
 main {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(214, 211, 211);
 }
 
 img {
   max-width: 100%;
   display: block;
   margin: auto;
+  object-fit: cover;
 }
 
 section ul {
@@ -22,6 +27,7 @@ section ul {
 }
 
 header h1 {
+  width: 100%;
   text-align: center;
   text-decoration: underline;
   color: white;
@@ -30,6 +36,7 @@ header h1 {
 }
 
 section h2 {
+  width: 100%;
   text-align: center;
   border-bottom: solid black;
   background-color: bisque;
@@ -48,11 +55,10 @@ section h2 {
 }
 
 .grid-item p {
-  background-color: bisque;
-  padding: 0.5rem;
-  box-shadow: 0 0.25rem 1rem rgba(0 0 0 / 0.3);
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 section li {
@@ -69,11 +75,9 @@ section li {
   text-align: center;
 }
 
-header {
-  display: grid;
-}
+/************************* Responsive Grid Layout ************************/
 
-@media (min-width: 240px) {
+@media (min-width: 320px) {
   section ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -97,7 +101,7 @@ header {
   }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1024px) {
   section ul {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -106,18 +110,10 @@ header {
     grid-column: span 2;
   }
 
-  ul :nth-child(2) {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    justify-self: center;
-    align-self: center;
-  }
-
+  ul :nth-child(2),
   ul :nth-child(3) {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    justify-self: center;
-    align-self: center;
+    grid-column: span 1;
+    text-align: center;
   }
 
   ul :nth-child(n + 4) {
