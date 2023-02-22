@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+header h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+section h2 {
+  text-align: center;
+  border-bottom: solid black;
+  background-color: bisque;
+  padding: 1rem 0;
+}
+
+.grid-item h3 {
+  text-align: center;
+  text-decoration-line: underline;
+  border: solid 2px black;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.grid-item p {
+  background-color: bisque;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0 0 0 / 0.3);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+section li {
+  list-style: none;
+  margin: 0.7rem;
+}
+
+.grid-item {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+header {
+  display: grid;
+}
+
+@media (min-width: 240px) {
+  header {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+  section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  ul :first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 640px) {
+  section ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  ul :first-child,
+  ul :nth-child(2) {
+    grid-column: span 3;
+  }
+
+  ul :nth-child(n + 3) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 980px) {
+  section ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  ul :first-child {
+    grid-column: span 2;
+  }
+
+  ul :nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+  }
+
+  ul :nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  ul :nth-child(n + 4) {
+    grid-column: span 1;
+  }
+}
