@@ -188,15 +188,6 @@ a:active {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.language_section {
-  display: flex;
-  flex-direction: column;
-}
-
-.language {
-  display: inline-block;
-}
-
 .progress_bar {
   margin-right: 0.7rem;
 }
