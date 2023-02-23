@@ -6,28 +6,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(214, 211, 211);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 main {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  max-width: 1400px;
+}
+
+#grid-floats {
   margin: 0 auto;
-  background-color: rgb(214, 211, 211);
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-  object-fit: cover;
-}
-
-section ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
 header h1 {
-  width: 100%;
   text-align: center;
   text-decoration: underline;
   color: white;
@@ -36,7 +32,6 @@ header h1 {
 }
 
 section h2 {
-  width: 100%;
   text-align: center;
   border-bottom: solid black;
   background-color: bisque;
@@ -44,26 +39,16 @@ section h2 {
 }
 
 .grid-item h3 {
-  text-align: center;
   text-decoration-line: underline;
   border: solid 2px black;
   border-radius: 20px;
   color: white;
   background-color: black;
   padding: 1rem 0;
-  z-index: 10;
 }
 
 .grid-item p {
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 1rem;
   line-height: 1.5rem;
-}
-
-section li {
-  list-style: none;
-  margin: 0.7rem;
 }
 
 .grid-item {
@@ -73,50 +58,70 @@ section li {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  list-style: none;
+  margin: 0.7rem;
 }
 
+.grid-item img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+.grid-item img:hover {
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+  opacity: 0.9;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+ul {
+  padding: 1rem 5rem;
+}
 /************************* Responsive Grid Layout ************************/
 
-@media (min-width: 320px) {
-  section ul {
+@media (min-width: 240px) {
+  #grid-floats {
     grid-template-columns: repeat(2, 1fr);
   }
-  ul :first-child {
+
+  #grid-floats :first-child {
     grid-column: span 2;
   }
 }
 
 @media (min-width: 640px) {
-  section ul {
+  section #grid-floats {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  ul :first-child,
-  ul :nth-child(2) {
+  #grid-floats :first-child,
+  #grid-floats :nth-child(2) {
     grid-column: span 3;
   }
 
-  ul :nth-child(n + 3) {
+  #grid-floats :nth-child(n + 3) {
     grid-column: span 2;
   }
 }
 
-@media (min-width: 1024px) {
-  section ul {
+@media (min-width: 1100px) {
+  section #grid-floats {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  ul :first-child {
+  #grid-floats :first-child {
     grid-column: span 2;
   }
 
-  ul :nth-child(2),
-  ul :nth-child(3) {
+  #grid-floats :nth-child(2),
+  #grid-floats :nth-child(3) {
     grid-column: span 1;
-    text-align: center;
   }
 
-  ul :nth-child(n + 4) {
+  #grid-floats :nth-child(n + 4) {
     grid-column: span 1;
   }
 }
