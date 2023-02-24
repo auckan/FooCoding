@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/*-------------GENERAL STYLING---------------*/
+
 body {
   background-color: rgb(214, 211, 211);
   display: grid;
@@ -31,6 +33,18 @@ header h1 {
   padding: 2rem 0;
 }
 
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 section h2 {
   text-align: center;
   border-bottom: solid black;
@@ -45,6 +59,7 @@ section h2 {
   color: white;
   background-color: black;
   padding: 1rem 0;
+  animation: zoom-in-zoom-out 2s ease infinite;
 }
 
 .grid-item p {
@@ -80,7 +95,8 @@ section h2 {
 ul {
   padding: 1rem 5rem;
 }
-/************************* Responsive Grid Layout ************************/
+
+/*-------------RESPONSIVE GRID LAYOUT---------------*/
 
 @media (min-width: 240px) {
   #grid-floats {
