@@ -188,6 +188,6 @@ a:active {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.progress_bar {
-  margin-right: 0.7rem;
+.learning_strategy_list {
+  list-style: decimal;
 }
