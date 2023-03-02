@@ -884,7 +884,7 @@ footer {
 
 /**********************************************/
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   header .mobile-hide {
     display: none;
   }
