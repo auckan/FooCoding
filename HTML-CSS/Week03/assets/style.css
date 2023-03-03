@@ -11,8 +11,8 @@
 
 body {
   min-height: 100vh;
-  display: grid;
   font-family: "Roboto", sans-serif;
+  min-width: 21.5rem;
 }
 
 .hero,
@@ -23,7 +23,8 @@ body {
 
 .latest-news-section,
 .sub-titles,
-.work-with-us {
+.work-with-us,
+.video-section {
   max-width: 80rem;
   margin: auto;
 }
@@ -80,18 +81,20 @@ header .hide {
   height: 4rem;
   width: 100%;
   position: relative;
+  background-color: #fff;
 }
 
 .second-container-logo {
   position: absolute;
   top: 1.15rem;
+  padding-left: 0.5rem;
 }
 
 .second-container-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 3.2rem;
+  padding-left: 4rem;
 }
 
 .second-container-items li {
@@ -520,6 +523,83 @@ header .hide {
   padding-top: 0.5rem;
 }
 
+/***************************Video News**********************************/
+.video-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(239, 240, 240);
+  padding-top: 4rem;
+}
+
+.main-video {
+  width: 100%;
+  background-color: rgb(1, 1, 1);
+}
+
+.video-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-align: left;
+  padding: 1.5rem 1rem 0.5rem 1.5rem;
+}
+
+.video-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(117, 131, 142);
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 0 1rem 1.5rem 1.5rem;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 1/0.8;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  object-fit: cover;
+}
+
+.video-slider {
+  display: flex;
+  overflow: scroll;
+}
+
+.video-slider-menu {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.video-slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  gap: 0.5rem;
+}
+
+.video-slider-item img {
+  width: 11rem;
+  height: 6rem;
+  object-fit: cover;
+  max-width: none;
+}
+
+.video-info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
 /**************************Work with Us Seciton*************************/
 .work-with-us {
   margin: auto;
@@ -594,7 +674,7 @@ header .hide {
   font-size: 1.125rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 .work-with-us input {
@@ -618,6 +698,11 @@ footer {
 .footer-nav {
   display: flex;
   list-style: none;
+  color: #6de;
+}
+
+.footer-nav li h3 {
+  color: #fff;
 }
 
 .footer-first-nav {
@@ -641,6 +726,8 @@ footer {
 .footer-legal {
   text-align: center;
   padding: 2rem 1.5rem 4rem 1.5rem;
+  border-top: 1px solid grey;
+  margin: 0.5rem;
 }
 
 .footer-logo {
@@ -811,11 +898,78 @@ footer {
     display: inline;
   }
 
+  .video-section {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 2rem;
+    height: 35rem;
+  }
+
+  iframe {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .video-heading {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .video-slider {
+    display: flex;
+    overflow-y: scroll;
+  }
+
+  .video-slider-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+    height: 30rem;
+    width: 80%;
+  }
+
+  .video-slider-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: rgb(0, 0, 0);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .video-slider-item > img {
+    width: 100%;
+    height: 9rem;
+  }
+
+  .video-info {
+    font-size: 0.9rem;
+  }
+
+  .video-info:hover {
+    cursor: pointer;
+    color: rgb(167, 147, 253);
+    transition: ease-in-out 0.2s;
+  }
+
   .work-with-us {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .work-with-us p {
+    text-align: left;
+  }
+
+  .work-with-us h2,
+  .work-with-us h3 {
+    text-align: left;
   }
 
   .work-with-us .company-logos {
@@ -1046,11 +1200,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(1, 5rem);
-  }
-
-  .work-with-us h2,
-  .work-with-us h3 {
-    text-align: left;
   }
 
   .company-logos :nth-child(-n + 6) {
