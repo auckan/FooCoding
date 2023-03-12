@@ -220,10 +220,7 @@ header .hide {
   background-size: cover;
 }
 
-.article2 h3,
-.article3 h3,
-.article1 h3,
-.article5 h3 {
+.hero .bottom h3 {
   font-size: 0.8rem;
   color: #fff;
   letter-spacing: 0.08em;
@@ -340,6 +337,7 @@ header .hide {
 
 .latest-news-list li {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 
 .latest-news-content {
@@ -349,6 +347,8 @@ header .hide {
 
 .latest-news-list img {
   padding-bottom: 1.5rem;
+  width: 26%;
+  aspect-ratio: 1/1;
 }
 
 .latest-news-section h2 {
@@ -617,8 +617,8 @@ iframe {
 }
 
 .work-with-us .media-logos img {
-  width: 32%;
   display: block;
+  width: 6rem;
 }
 
 .work-with-us figcaption {
@@ -819,7 +819,8 @@ footer {
   }
 
   .latest-news-list li img {
-    aspect-ratio: 1/0.6;
+    width: 90%;
+    aspect-ratio: 1/0.55;
     padding-bottom: 0.5rem;
     object-fit: cover;
   }
@@ -977,7 +978,7 @@ footer {
   }
 
   .work-with-us .media-logos img {
-    width: 50%;
+    width: 7rem;
     display: block;
   }
 
