@@ -1,1 +1,1 @@
-Javascript 1 - Weeok02 Homework Files
+Javascript 1 - Week02 Homework Files
