@@ -37,6 +37,21 @@ const colorCar = (color) => {
 
 colorCar("red");
 
+//////////   3   //////////
+const obj = {
+  favcolor: "blue",
+  favfruit: "apple",
+  luckynumber: 9,
+};
+
+function printObjectProperties(object) {
+  for (property in object) {
+    console.log(property + ": " + object[property]);
+  }
+}
+
+printObjectProperties(obj);
+
 //////////   4   //////////
 const vehicleType = (color1, code) => {
   let type = code === 1 ? "car" : "motorbike";
@@ -90,3 +105,60 @@ message(vehicles);
 //////////   11  //////////
 vehicles.push("truck");
 message(vehicles);
+
+//////////   12  //////////
+const emptyObj = {};
+
+//////////   13  //////////
+const myTeachers = {
+  name1: "Frank",
+  name2: "Emmy",
+  name3: "Freddy",
+};
+
+//////////   14  //////////
+const myTeachers2 = {
+  Frank: "HTML",
+  Emmy: "CSS",
+  Freddy: "Javascript",
+};
+
+//////////   15  //////////
+let x = [1, 2, 3];
+let y = [1, 2, 3];
+let z = y;
+
+console.log("The value of x == y is true ");
+let eq1 = x == y ? "true" : "false";
+console.log(eq1); //false
+
+console.log("The value of x === y is false ");
+let eq2 = x === y ? "true" : "false";
+console.log(eq2); //false
+
+console.log("The value of z == y is true ");
+let eq3 = z == y ? "true" : "false";
+console.log(eq3); //true
+
+console.log("The value of z == x is false ");
+let eq4 = z == x ? "true" : "false";
+console.log(eq4); //false
+
+//////////   16   //////////
+
+let o1 = { foo: "bar" };
+let o2 = { foo: "bar" };
+let o3 = o2;
+
+o2 = { foo: "pub" };
+o1 = { foo: "home" };
+console.log(o2);
+console.log(o3);
+console.log("Changing o2 does not change o3. Changing o1 hdoes not change o3.");
+
+//////////   17   //////////
+let bar = 42;
+console.log(typeof typeof bar);
+
+/* typeof bar will evaluate to "number", because bar is assigned the number 42.
+typeof "number" will evaluate to "string", because typeof always returns a string representation. */
