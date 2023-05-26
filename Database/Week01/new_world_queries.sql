@@ -29,3 +29,7 @@ select name, population from city order by population desc limit 10;
 
 -- 10. What is the population of the world ?
 select sum(population) as worldpopulation from country;
+
+-- EXTRA TASK === give me the names of the countries that has more than 10 cities, and a total population of the cities listed (not the country population) of more than 50 million
+
+SELECT country.Name FROM country INNER JOIN city ON country.Code = city.CountryCode GROUP BY CountryCode HAVING COUNT(*) > 10 AND SUM(city.Population) > 50000000;
